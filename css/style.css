@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+  }
+
+li{
+    border:solid 10px black;
+    color: orange;
+}
+
+h1{
+    color: darkgreen;
+    font-size: 40px;
+    text-align :center;
+}
+
+h4{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+}
+h3{
+    color: black;
+    font-size: 25px;
+    text-align: left;
+}
+
+caption{
+    font-size: 30px;;
+}
+
+ .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 1500px;
+    height: 400px;
+
+  }
+
+  .country_usa{
+    object-fit:cover;
+    background-color: #d6e7fc ;
+  }
+
+  .country_india{
+    object-fit:cover;
+    background-color: #ffcad9 ;
+  }
+
+  .country_uk{
+    object-fit:cover;
+    background-color: #f4eed2 ;
+  }
+
+  .country_japan{
+    object-fit:cover;
+    background-color: #e2c4f2 ;
+  }
+
+  .country_china{
+    object-fit:cover;
+    background-color: #b1e5f2 ;
+  }
+
+
+
+  .countries {
+    height: 300px;
+    width: 300px;
+    align-self: center;
+    border: 5px solid black;
+    position: relative;
+  }
+
+  #movie_usa{
+    object-fit:cover;
+    align-self: center;
+    border: 7px purple double;
+    display: block;
+    margin: 0 auto;
+    width:600px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  .countries:hover{
+    color: yellow;
+    border:solid 5px;
+    
+    
+  }
+
+
+.row{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+
+  }
+
+  .newyear_usa_gallery img{
+    object-fit:cover;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  .newyear_usa_gallery figcaption {
+    width: 300px;
+  }
+
+  .newyear_usa_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 20px;
+    margin-top: 44px;
+    grid-auto-rows: 500px;
+    row-gap: 30px;
+    column-gap: 30px;
+
+  }
+
+  .newyear_usa_images{
+    border: 5px solid firebrick;
+    text-align: center;
+    
+  }
+  .newyear_usa_images img{
+    object-fit:contain;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+
+   
+  }
+
+
+  .newyear_usa_images p{
+    color: black;
+    float: left;
+    text-align: left;
+  }
+
+  .newyear_usa_images table,tr,td,th{
+    border: 2px solid black;
+    background-color: #dcf2e2;
+    padding: 10px;
+    width:max-content;
+    text-align: center;
+    margin: auto;
+  }
+
+  caption{
+    width:max-content;
+    text-align: center ;
+    margin: 20px;
+    
+  }
+  #usa_list {
+    color: #7324e1;
+ }
+
+ 
+ .independence_usa_images{
+    border: 5px solid firebrick;
+    text-align: center;
+    
+ }
+
+ .independence_usa_images img{
+    object-fit:contain;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+    height: 250px;
+    width: 250px;
+    margin: 20px;   
+  }
+
+
+  .independence_usa_images p{
+    color: blue;
+    text-align: left;
+  }
+
+ .color_table table,tr,td,th{
+    border: 2px solid black;
+    background-color: #e6d7fa;
+    padding: 10px;
+    width:max-content;
+    text-align: center;
+    margin: auto;
+  }
+
+  #india_main{
+    border: 4px solid orange;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .welcome{
+
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    color:#160630;
+  }
+
+  .options{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    align-content: center;
+    margin: auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #option1{
+    background-color: #eae7dc;
+    padding: 40px;
+  }
+  #option2{
+    background-color: #d8c3a5;
+    padding: 40px;
+  }
+  #option3{
+    background-color: #8e8d8a;
+    padding: 40px;
+  }
+  #option4{
+    background-color: #e98074;
+    padding: 40px;
+    
+  }
+  #option5{
+    background-color: #e85a4f;
+    padding: 40px;
+  }
+
+  .usa_options{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    align-content: center;
+    margin: auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #usa_option1{
+    background-color: #7593ce;
+    padding: 40px;
+  }
+  #usa_option2{
+    background-color: #bad9f8;
+    padding: 40px;
+  }
+  #usa_option3{
+    background-color: #ffe5e4;
+    padding: 40px;
+  }
+  #usa_option4{
+    background-color: #f8caca;
+    padding: 40px;
+    
+  }
+  #usa_option5{
+    background-color: #eda6a6;
+    padding: 40px;
+  }
+
+  .funfact{
+    display:flex;
+    margin: 0px 50px 0px 50px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+  }
+  
+
+  .funfact p{
+    height:200px;
+    width: 200px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px dotted black;
+    padding: 40px;
+    background-color: #e2c4f2;
+    margin: 40px;
+  }
+  #fact_india {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    box-sizing: border-box;
+    height: 20%;
+    margin: auto;
+    width: 70%;
+    background-color: #B31942;
+    padding: 10px;
+  }
+  
+  #fact_india > p{
+    background-color: white;
+    padding: 5px;
+    color: #000080;
+    border: 5px solid #FF9933;
+  }
+
+  #fact_usa{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+    box-sizing: border-box;
+    height: 20%;
+    margin: auto;
+    width: 80%;
+    background-color: #0A3161;
+    padding: 10px;
+  }
+
+  #fact_usa > p{
+    background-color: white;
+    padding: 5px;
+    color: #000080;
+    border: 5px solid #B31942;
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .options{
+        grid-template-columns: repeat(5,1fr);
+    }
+  }
+    nav {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    
+  }
+  nav a{
+    font-size: 20px;
+    float: right;
+    padding: 0px 20px; 
+    color: white;
+  }
+  
+  nav a:hover {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+  }
+
+  nav a.active {
+    color: black;
+    background-color: yellow;
+    font-weight: bold;
+  }
+
+
+  .big_content{
+    font-size: 30px;
+    margin: 30px;
+  }

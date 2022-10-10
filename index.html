@@ -4,54 +4,67 @@
   <head>
     <meta charset="utf-8">
     <title>Feel of Festival</title>
-    <!--<link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
     <header>
-      <nav></nav>
+      <a href="#main" class="skip">Jump to content</a>
+      <nav> 
+        <a class="active" href="index.html">Home</a>
+    </nav>
     <h1>Feel of Festival</h1>
 
-  </header>
-  <main>
-    <h2>Select the country from the below list.</h2>
+    </header>
+  <main id="main">
+    <a href="#main" class="skip">Jump to content</a>
 
-    <p>Interested in any specific country? Go ahead and explore all the festivals and important days celebrated there along with a well curated set of movies that will set just the right tone for you. We believe that a good movie will be a great start to the holiday!</p>
+    <p class="welcome">Interested in any specific country? Go ahead and explore all the festivals and important days celebrated there along with a well curated set of movies that will set just the right tone for you. We believe that a good movie will be a great start to the holiday!</p>
   
-    <h3>USA</h3>
-    <img src = "images/usa.png" alt ="USA Map">
-    <a href="movies_usa.html">US movies</a>
-    <h3>India</h3>
-    <img src = "images/india.jpg" alt ="India Map">
-    <a href="movies_india.html">India movies</a>
-    <h3>China</h3>
-    <img src = "images/china.png" alt ="China Map">
-    <p>China movies</p>
-    <h3>UK</h3>
-    <img src = "images/uk.jpg" alt ="UK Map">
-    <p>UK movies</p>
-    <h3>Japan</h3>
-    <img src = "images/japan.jpeg" alt ="Japan Map">
-    <p>Japan movies</p>
+
+    <div class="wrapper">
+      <div class="country_usa">
+        <h4>USA</h4>
+        <a href="movies_usa.html"><img class=countries src = "images/usa.png" alt ="USA Map"></a>
+      </div>
+      <div class="country_india">
+        <h4>India</h4>
+        <a href="movies_india.html"><img class=countries  src = "images/india.png" alt ="India Map"></a>
+      </div>
+      <div class="country_china">
+        <h4>China</h4>
+        <a href="index.html"><img class=countries src = "images/china.png" alt ="China Map"></a>
+      </div>
+      <div class="country_uk">
+        <h4>UK</h4>
+        <a href="index.html"><img class=countries src = "images/uk.png" alt ="UK Map"></a>
+      </div>
+      <div class="country_japan">
+        <h4>Japan</h4>
+        <a href="index.html"><img class=countries src = "images/japan.png" alt ="Japan Map"></a>
+      </div>
+    </div>
+
     
 
-      <h2>Upcoming events in each country</h2>
-      <p>Each country is looking forward to many glorious festivals and events!
+    <h3>Upcoming events in each country</h3><br>
+      <p class="welcome">Each country is looking forward to many glorious festivals and events!
         Movies usually help us feel like the holidays are arriving and helps us get immersed in the festivals. Below are the upcoming festivals from each country.
          </p>
 
-      <ul>
-        <li>USA-<a href="new_year_usa.html">New Year (1st January)</a></li>
-        <li>India-<a href="republic_india.html">Republic Day (24th January)</a></li>
-        <li>China-The Double Ninth Festival (4th October)</li>
-        <li>UK-Halloween (31st October)</li>
-        <li>Japan-Karatsu Kunchi Festival Saga (2nd November)</li>
-      </ul>
+    <div class="wrapper">
+      <div class="country_usa"><p class="big_content">USA <br><br><a href="new_year_usa.html">New Year <br><br>1st January</a></p></div>
+      <div class="country_india"><p class="big_content">India <br><br><a href="republic_india.html">Republic Day <br><br>24th January</a></p></div>
+      <div class="country_china"><p class="big_content">China <br><br><a>The Double Ninth Festival <br><br>4th October</a></p></div>
+      <div class="country_uk"><p class="big_content">UK <br><br>Halloween <br><br>31st October</p></div>
+      <div class="country_japan"><p class="big_content"> Japan<br><br>Karatsu Kunchi Festival Saga <br><br>2nd November</p></div>
+      </div>
 
       
     </main>
     <footer>
+      <a href="#main" class="skip">Jump to content</a>
       <p>The one stop site to search for movies based on their region and festivals/important days! </p>
       <p>Image and Movie list sources:</p><br>
       <ul>
