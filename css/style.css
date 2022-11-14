@@ -300,21 +300,19 @@ img{
   nav {
   height: 50px;
   width: 100%;
-  background-color: black;
+  font-size: large;
+  background-color:white;
   position: relative;
 }
 nav a{
   font-size: 20px;
   float: right;
   padding: 0px 20px; 
-  color: white;
+  color: black;
+  background-color: #dcf2e2;
+  width: 100%;
 }
 
-nav a:hover {
-  color: black;
-  background-color: white;
-  font-weight: bold;
-}
 
 nav a.active {
   color: black;
