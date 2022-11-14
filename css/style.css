@@ -21,8 +21,6 @@ main{
 }
 .item-1,.item2,.item-3,.item-4{
   row-gap: 5px;
-  text-align: center;
-  margin-left: 3px;
 }
 .pictures{
   display: flex;
