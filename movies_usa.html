@@ -3,13 +3,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USA</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVN1C8TEPH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-LVN1C8TEPH');
+    </script>
   </head>
-  <body>
-    <header>
+  <body class="grid-container">
+    <header  class="item-1">
       <nav>
         <div class="navbar_list">
           <a class="navbar_link" href="index.html">Home</a>
@@ -17,9 +25,10 @@
         </div>
       </nav>
   </header>
-  <main>
+  <main  class="item-2">
     <h1>Welcome to the United States of America! </h1>
-    <h3>Fun Facts about the US movie industry</h3>
+ 
+    <h2>Fun Facts about the US movie industry</h2>
     <div id="fact_usa">
     <p>The movie "In Old California" was the first hollywood movie to ever be made.This was in the done in the year 1910.</p>
     <p>The famous Hollywood sign in Los Angels was earlier spelt as "Hollywoodland" in 1923.</p>
@@ -27,9 +36,8 @@
   </div>
     <img id="movie_usa" src = "images/hollywood_sign.png" alt ="Hollywood sign">
 
-    <h3>Events/Festivals</h3><br>
+    <h2>Events/Festivals</h2><br>
     <p id="welcome">Below are 5 events/festivals that we think are important and some great movie collection for each of them. We completely agree that narrowing down the movie to watch is always a hard task. We have narrowed them down for you and we hope you enjoy the collection!</p>
-
 
     <div class="usa_options">
         <p id="usa_option1"><a href="new_year_usa.html">New Year</a></p>
@@ -42,8 +50,9 @@
 
       
     </main>
-    <footer>
-
+    <aside>Last updated on Oct,2022</aside>
+    <footer  class="item-4">
+      <p>Copyright 2022</p>
     </footer>
   </body>
 </html>
