@@ -8,16 +8,66 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
   </head>
-  <body class="grid-container">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LVN1C8TEPH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LVN1C8TEPH');
+</script>
+  <body>
+    <div class="skip"><a href="#main">Jump to Content</a></div>
+  <div class="grid-container">
     <header class="item-1">
-    
-      <nav> 
-        <a href="index.html" >Home</a>
-        <a href="movies_usa.html">Movies</a>
-        <a href="newyear_usa_photos.html">Photos</a>
-      </nav>
+      
+<div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+
+  <div class="dropdown">
+    <button id="active" class="dropbtn">Movies 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a class="active" href="movies_usa.html">USA</a>
+      <a href="movies_india.html">India</a>
+      <a href="#">UK</a>
+      <a href="#">China</a>
+      <a href="#">Japan</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Gallery 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="newyear_usa_photos.html">USA</a>
+      <a href="#">India</a>
+      <a href="#">UK</a>
+      <a href="#">China</a>
+      <a href="#">Japan</a>
+    </div>
+   
+  </div> 
+  <a  href="contact.html">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
       <h1 id="usa_list"><i class="fa-sharp fa-solid fa-film"></i>List of New Year movies from Hollywood</h1>
    
     </header>
@@ -104,12 +154,13 @@
           <img  src ="images/trading_places.jpg" alt ="Poster of Trading Places">
           <p>"Brothers Randolph and Mortimer Duke own a commodities brokerage firm, Duke & Duke Commodity Brokers, in Philadelphia, Pennsylvania. Holding opposing views on the issue of nature versus nurture, they make a wager and agree to conduct an experiment—switching the lives of two people on opposite sides of the social hierarchy and observing the results. Witnessing an encounter between their managing director—the well-mannered and educated Louis Winthorpe III, engaged to the Dukes' grandniece Penelope—and poor black street hustler Billy Ray Valentine; Valentine is arrested at Winthorpe's insistence after the latter assumes he is being robbed in broad daylight."</p>
       </div>
+      <div class="item-3" id="aside"><aside class="item-3">Timeframe of movies displayed: 1925-1989</aside></div>
+    </div>
     </div>
         
       </main>
 
-    <aside class="item-3">Timeframe of movies displayed: 1925-1989</aside>
-   <footer class="item-4">Copyright 2022, Source: Wikipedia</footer>
+   <footer class="item-4">Movie sources include Wikipedia and IMDB. Data updated as of Dec,2022</footer>
   </body>
 
 </html>

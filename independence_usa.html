@@ -9,15 +9,76 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
   </head>
-  <body class="grid-containers">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LVN1C8TEPH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LVN1C8TEPH');
+</script>
+  <body>
+    <div class="skip"><a href="#main">Jump to Content</a></div>
+  <div class="grid-container">
     <header class="item-1">
-      <nav> 
-        <a href="index.html">Home</a>
-        <a href="movies_usa.html">Movies</a>
-        <a>Photos</a>
-    </nav>
+          
+      
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" >Home</a>
+      
+        <div class="dropdown">
+          <button id="active" class="dropbtn">Movies 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a class="active" href="movies_usa.html">USA</a>
+            <a href="movies_india.html">India</a>
+            <a href="#">UK</a>
+            <a href="#">China</a>
+            <a href="#">Japan</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">Gallery 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="newyear_usa_photos.html">USA</a>
+            <a href="#">India</a>
+            <a href="#">UK</a>
+            <a href="#">China</a>
+            <a href="#">Japan</a>
+          </div>
+         
+        </div> 
+        <a  href="contact.html">Contact</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+</div>
+
+
+<script>
+  const btn = document.getElementsByClassName('dropbtn');
+
+btn.addEventListener('click', function onClick() {
+  btn.style.backgroundColor = 'salmon';
+  btn.style.color = 'white';
+});
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
       
     <h1 id="usa_list"><i class="fa-sharp fa-solid fa-film"></i>List of Independence Day movies from Hollywood</h1>
   </header>
@@ -113,18 +174,20 @@
   
     
     </div>
+    <div class="newyear_usa_images" id="aside"><aside class="item-3">Timeframe of movies displayed: 1939-1970</aside></div>
   </div>
       
     </main>
 
-    <aside class="item-3">Timeframe of movies displayed: 1939-1970</aside>
+    
     <footer class="item-4">
-      Source: Wikipedia
+      Movie sources include Wikipedia and IMDB. Data updated as of Dec,2022
+      <!-- Source: Wikipedia
         https://www.etsy.com/listing/607237664/the-longest-day-1962-john-wayne-movie
         https://www.allposters.com/-st/Mr-Smith-Goes-to-Washington-1939-Posters_c7600_.htm
         https://www.ebay.com/itm/390924342341
         https://www.alamy.com/yankee-doodle-dandy-poster-image156928592.html
-        https://movieposters2.com/Patton-movie-poster_656996.html
+        https://movieposters2.com/Patton-movie-poster_656996.html -->
     </footer>
   </body>
 </html>

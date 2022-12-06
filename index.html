@@ -5,26 +5,63 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feel of Festival</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
   </head>
-  <body class="grid-container">
-    <header class="item-1">
-      <a href="#main" class="skip">Jump to content</a>
-      <nav> 
-        <a class="active" href="index.html">Home</a>
-    </nav>
-    <h1>Feel of Festival</h1>
-    </header>
-  <main id="main" class="item-2">
-    <a href="#main" class="skip">Jump to content</a>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LVN1C8TEPH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <p class="welcome">Interested in any specific country? Go ahead and explore all the festivals and important days celebrated there along with a well curated set of movies that will set just the right tone for you. We believe that a good movie will be a great start to the holiday!</p>
+  gtag('config', 'G-LVN1C8TEPH');
+</script>
+  <body>
+    <div class="skip"><a href="#main">Jump to Content</a></div>
+  <div class="grid-container">
+  
+  <header class="item-1">
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Movies<i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a href="movies_usa.html">USA</a>
+      <a href="movies_india.html">India</a>
+      <a href="#">UK</a>
+      <a href="#">China</a>
+      <a href="#">Japan</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Gallery 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="newyear_usa_photos.html">USA</a>
+      <a href="#">India</a>
+      <a href="#">UK</a>
+      <a href="#">China</a>
+      <a href="#">Japan</a>
+    </div>
+  </div> 
+  <a href="contact.html">Contact</a>
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+    
+    <h1>Feel of Festival</h1>
+  </header>
+  <main id="main" class="item-2">
+
+  <p class="welcome">Interested in any specific country? Go ahead and explore all the festivals and important days celebrated there along with a well curated set of movies that will set just the right tone for you. We believe that a good movie will be a great start to the holiday!</p>
   
 
     <div class="wrapper">
@@ -51,8 +88,9 @@
       <div class="card"><div class="country_japan">
         <h2>Japan</h2>
         <a href=""><img class=countries src = "images/japan.png" alt ="Japan Map"></a>
-      </div></div>
-      
+      </div>
+    </div>
+    
     </div>
 
 
@@ -69,45 +107,26 @@
       <div class="country_uk"><p><h4>UK</h4><br><br>Halloween <br><br>31st October</p></div>
       <div class="country_japan"><p><h4>Japan</h4><br><br>Karatsu Kunchi Festival Saga <br><br>2nd November</p></div>
     </div>
+    </div>
 
       
     </main>
-    <aside class="item-3">Data updated as of Oct,2022</aside>
+    <aside></aside>
 
-    <!-- <form
-  action="https://formspree.io/f/xvoyvdvb"
-  method="POST"
-
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  your other form fields go here -->
-  <!-- <button type="submit">Send</button> -->
-<!-- </form> -->
     <footer class="item-4">
-   <a href="#main" class="skip">Jump to content</a>
-      <!--<p>The one stop site to search for movies based on their region and festivals/important days! </p>
-      <p>Image and Movie list sources:</p><br>
-      <ul>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Flag-map_of_the_United_States.svg">US map</a></li>
-        <li><a href=" https://www.mappr.co/flag-maps/india/">India map</a></li>
-        <li><a href="https://commons.wikimedia.org/wiki/File:Flag-map_of_the_People%27s_Republic_of_China.svg">China map</a></li>
-        <li><a href="https://www.freepik.com/premium-photo/uk-flag-map-country-outline-with-national-flag_23560100.htm">UK map</a></li>
-        <li><a href="https://www.alamy.com/japan-flag-map-image343686777.html">Japan map</a></li>
-      </ul>
-
-      <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Public_holidays_in_the_United_States">US movies</a></li>
-        <li><a href="https://www.asiahighlights.com/india/festivals-and-celebrations">India movies</a></li>
-        <li><a href="https://www.chinahighlights.com/festivals/traditional-festival/">China movies</a></li>
-        <li><a href="http://projectbritain.com/holidays.html">UK movies</a></li>
-        <li><a href="https://www.timeout.com/tokyo/things-to-do/the-most-beautiful-traditional-festivals-in-japan">Japan movies</a></li>
-      </ul> -->
+      Movie sources include Wikipedia and IMDB. Data updated as of Dec,2022
     </footer>
+  </div> 
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+      </div>
   </body>
 </html>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -9,18 +8,67 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LVN1C8TEPH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-   
-  </head>
-  <body >
+  gtag('config', 'G-LVN1C8TEPH');
+</script>
+<body>
+  <div class="skip"><a href="#main">Jump to Content</a></div>
+<div class="grid-container">
     <header class="item-1">
-      <nav> 
+      
+      <div class="topnav" id="myTopnav">
         <a href="index.html">Home</a>
-        <a href="movies_india.html">Movies</a>
-        <a>Photos</a>
-    </nav>
-    
-    <h1 ><i class="fa-sharp fa-solid fa-film"></i>List of Republic day movies from India</h1>
+      
+        <div class="dropdown">
+          <button class="dropbtn">Movies 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="movies_usa.html">USA</a>
+            <a href="movies_india.html">India</a>
+            <a href="#">UK</a>
+            <a href="#">China</a>
+            <a href="#">Japan</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">Gallery 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="newyear_usa_photos.html">USA</a>
+            <a href="#">India</a>
+            <a href="#">UK</a>
+            <a href="#">China</a>
+            <a href="#">Japan</a>
+          </div>
+          
+        </div> 
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+      
+      <h1  ><i class="fa-sharp fa-solid fa-film"></i>List of Republic day movies from India</h1>
   </header>
   <main class="item-2">
    
@@ -115,19 +163,22 @@
         <p>Rang De Basanthi revolves around a set of college friends who act in a political film after the death of their beloved friend who lost his life due to a political mishap.</p>
 
     </div>
-
+    <div class="item-3" id="aside"><aside class="item-3">Timeframe of movies displayed: 2001-2021</aside></div>
+  </div>
   </div>
       
     </main>
-    <aside class="item-3">Timeframe of movies displayed: 2001-2021</aside>
+
     <footer class="item-4">
-Image poster sources :
+ Movie sources include Wikipedia and IMDB. Data updated as of Dec,2022
+
+<!-- Image poster sources :
 https://www.hyderabadtourism.travel/ramoji-film-city-hyderabad
 https://www.socialnews.xyz/2019/01/02/uri-the-surgical-strike-movie-release-date-poster/
 https://en.wikipedia.org/wiki/Chak_De!_India
 https://en.wikipedia.org/wiki/Lagaan
-<!-- https://www.bollywoodhungama.com/news/features/shershaah-first-look-sidharth-malhotra-captain-vikram-batra-intriguing-posters-film-release-july-3-2020/ -->
-https://en.wikipedia.org/wiki/Rang_De_Basanti
+https://www.bollywoodhungama.com/news/features/shershaah-first-look-sidharth-malhotra-captain-vikram-batra-intriguing-posters-film-release-july-3-2020/
+https://en.wikipedia.org/wiki/Rang_De_Basanti -->
 
     </footer>
   </body>

@@ -8,15 +8,68 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  
 
   </head>
-  <body class="grid-container">
-    <header class="item-1">
-      <nav>
-        <a href="index.html">Home</a>
-        <a class="active" href="movies_india.html">Movies</a>
-      </nav>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LVN1C8TEPH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LVN1C8TEPH');
+</script>
+  <body>
+    <div class="skip"><a href="#main">Jump to Content</a></div>
+  <div class="grid-container">
+       
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+    
+      <div class="dropdown">
+        <button id="active" class="dropbtn">Movies 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="movies_usa.html">USA</a>
+          <a class="active" href="movies_india.html">India</a>
+          <a href="#">UK</a>
+          <a href="#">China</a>
+          <a href="#">Japan</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button  class="dropbtn">Gallery 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="newyear_usa_photos.html">USA</a>
+          <a href="#">India</a>
+          <a href="#">UK</a>
+          <a href="#">China</a>
+          <a href="#">Japan</a>
+        </div>
+        
+      </div> 
+      <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
   </header>
   <main class="item-2">
     <h1>Welcome to India!</h1>
@@ -40,9 +93,9 @@
 
       
     </main>
-    <aside class="item-3">Last updated on Oct,2022</aside>
+    <aside class="item-3"></aside>
     <footer class="item-4">
-    <p>Copyright 2022</p>
+      Movie sources include Wikipedia and IMDB. Data updated as of Dec,2022
     </footer>
   </body>
 </html>
