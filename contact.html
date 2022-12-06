@@ -12,7 +12,9 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
   </head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LVN1C8TEPH"></script>
+
+  <body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVN1C8TEPH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -20,7 +22,6 @@
 
   gtag('config', 'G-LVN1C8TEPH');
 </script>
-  <body>
     <div class="skip"><a href="#main">Jump to Content</a></div>
   <div class="grid-container">
   <header class="item-1">
@@ -35,9 +36,7 @@
       <div class="dropdown-content">
         <a href="movies_usa.html">USA</a>
         <a href="movies_india.html">India</a>
-        <a href="#">UK</a>
-        <a href="#">China</a>
-        <a href="#">Japan</a>
+
       </div>
     </div> 
     <div class="dropdown">
@@ -46,10 +45,7 @@
       </button>
       <div class="dropdown-content">
         <a href="newyear_usa_photos.html">USA</a>
-        <a href="#">India</a>
-        <a href="#">UK</a>
-        <a href="#">China</a>
-        <a href="#">Japan</a>
+
       </div>
 
     </div> 
@@ -72,33 +68,28 @@
     <h1>Contact Us</h1>
     </header>
     
-    <body>
+ 
 
         <p>Did you like the content in this page? Were they helpful enough to prevent those hour long discussions on what movie to watch? Please let us know what you think about this since we are always open to feedback and would love to hear from you! If you feel like your favorite movie has been missed out from this list, kindly use this form to inform us about the same and we will do everything we can to get your movie on this list as well! We are always on the look on for new ways to improve and your suggestions matter a lot to us!</p>
         <img id="contact" src = "images/contact.jpg" alt ="Contact envelope">
         <div class="contact_form">
         <form action="https://formspree.io/f/xvoyvdvb" method="POST">
 <table>  
-   
-          <label >
+
+  
+
+
             <tr> 
-                <th>Your email:</th>
-                <td><input type="email" name="email"></td>
+                <th> <label for="email">Your email</label></th>
+                <td><input id="email" type="email" name="email"></td>
             </tr>
 
-            
-
-</label>
-
-<br>
-<label>
     <tr> 
-        <th> Your message:</th>
-        <td><textarea name="message"></textarea></td>
+        <th><label for="message">Your message</label></th>
+        <td><textarea id="message" name="message"></textarea></label> </td>
     </tr>
 
-</label>
-<label>    <tr><th colspan="2"><button type="submit">Submit</button></tr></th></label>
+   <tr><th colspan="2"><button type="submit">Submit</button></tr></th>
 </table>
 
     
